@@ -186,7 +186,7 @@ env = FactoryEnv(max_time=3600)
 model = PPO("MlpPolicy", env, verbose=1)
 
 # Train the model
-model.learn(total_timesteps=10**6)
+model.learn(total_timesteps=5*10**6)
 
 # Test the trained model
 obs = env.reset()
